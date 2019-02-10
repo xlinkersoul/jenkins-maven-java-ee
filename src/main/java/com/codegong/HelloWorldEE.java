@@ -25,7 +25,7 @@ public class HelloWorldEE extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String gongVersion=new String(" gongVersion 1.0");
+		String gongVersion=new String(" gongVersion 1.1");
 		response.getWriter().append("Served at: ").append(request.getContextPath()).append(gongVersion);
 	}
 
