@@ -4,6 +4,6 @@ node{
 	}
 	stage('Compile-Package'){
 		def mvnHome = tool name: 'maven-360' , type: 'maven'
-		sh '${mvnHome}/bin/mvn package'
+		sh 'echo ${mvnHome};${mvnHome}/bin/mvn package'
 	}
 }
