@@ -1,10 +1,8 @@
-pipeline{
-	agent any
-	stages{
-		stage('Build'){
-			steps{
-				sh 'echo "Building codegong done"'
-			}
-		}
+node{
+	stage('SCM Checkout'){
+		git 'https://github.com/xlinkersoul/jenkins-maven-java-ee'
+	}
+	stage('Compile-Package'){
+		sh 'echo ABC'
 	}
 }
